@@ -1,5 +1,5 @@
 module.exports = function toReadable (number) {
-      let numberToString = String(number);
+    let numberToString = String(number);
     if (number == 0){
         return`zero`;
     } else if (number < 11){
@@ -58,9 +58,10 @@ const numberFromElevenToNineteen = (number) =>{
 
 const numberDozens = (number) =>{
     switch (number){
+        case 1:return 'ten';
         case 2: return 'twenty';
         case 3: return 'thirty';
-        case 4: return 'fourty';
+        case 4: return 'forty';
         case 5: return 'fifty';
         case 6: return 'sixty';
         case 7: return 'seventy';
